@@ -1,16 +1,82 @@
 [
   {
     "snippet": {
-      "resourceId": { "videoId": "dQw4w9WgXcQ" },
-      "title": "Приклад відео: Географія",
-      "description": "Тестове відео для категорії Географія."
+      "resourceId": { "videoId": "ВАШ_VIDEO_ID_ГЕОГРАФІЯ" },
+      "title": "Вікторина з географії",
+      "description": "Перевірте свої знання географії з каналом Знання для всіх!",
+      "thumbnails": {
+        "medium": { "url": "https://img.youtube.com/vi/ВАШ_VIDEO_ID_ГЕОГРАФІЯ/mqdefault.jpg" }
+      }
     }
   },
   {
     "snippet": {
-      "resourceId": { "videoId": "kJQP7kiw5Fk" },
-      "title": "Приклад відео: Історія",
-      "description": "Тестове відео для категорії Історія."
+      "resourceId": { "videoId": "ВАШ_VIDEO_ID_ІСТОРІЯ" },
+      "title": "Вікторина з історії",
+      "description": "Тест на знання історії від Знання для всіх.",
+      "thumbnails": {
+        "medium": { "url": "https://img.youtube.com/vi/ВАШ_VIDEO_ID_ІСТОРІЯ/mqdefault.jpg" }
+      }
+    }
+  },
+  {
+    "snippet": {
+      "resourceId": { "videoId": "ВАШ_VIDEO_ID_БІБЛІЯ" },
+      "title": "Тест з Біблії",
+      "description": "Перевірте знання Біблії з Знання для всіх.",
+      "thumbnails": {
+        "medium": { "url": "https://img.youtube.com/vi/ВАШ_VIDEO_ID_БІБЛІЯ/mqdefault.jpg" }
+      }
+    }
+  },
+  {
+    "snippet": {
+      "resourceId": { "videoId": "ВАШ_VIDEO_ID_УКРАЇНА" },
+      "title": "Вікторина про Україну",
+      "description": "Тест на знання України від Знання для всіх.",
+      "thumbnails": {
+        "medium": { "url": "https://img.youtube.com/vi/ВАШ_VIDEO_ID_УКРАЇНА/mqdefault.jpg" }
+      }
+    }
+  },
+  {
+    "snippet": {
+      "resourceId": { "videoId": "ВАШ_VIDEO_ID_ЗАГАЛЬНІ_ЗНАННЯ" },
+      "title": "Тест із загальних знань",
+      "description": "Перевірте загальні знання з Знання для всіх.",
+      "thumbnails": {
+        "medium": { "url": "https://img.youtube.com/vi/ВАШ_VIDEO_ID_ЗАГАЛЬНІ_ЗНАННЯ/mqdefault.jpg" }
+      }
+    }
+  },
+  {
+    "snippet": {
+      "resourceId": { "videoId": "ВАШ_VIDEO_ID_ЛОГІКА" },
+      "title": "Вікторина з логіки",
+      "description": "Розв’яжіть логічні завдання з каналом Знання для всіх!",
+      "thumbnails": {
+        "medium": { "url": "https://img.youtube.com/vi/ВАШ_VIDEO_ID_ЛОГІКА/mqdefault.jpg" }
+      }
+    }
+  },
+  {
+    "snippet": {
+      "resourceId": { "videoId": "ВАШ_VIDEO_ID_ЩО_ЗАЙВЕ" },
+      "title": "Що зайве: Вікторина",
+      "description": "Знайдіть зайве з Знання для всіх!",
+      "thumbnails": {
+        "medium": { "url": "https://img.youtube.com/vi/ВАШ_VIDEO_ID_ЩО_ЗАЙВЕ/mqdefault.jpg" }
+      }
+    }
+  },
+  {
+    "snippet": {
+      "resourceId": { "videoId": "ВАШ_VIDEO_ID_НЕ_ПРОГРАЄШ" },
+      "title": "Не програєш: Вікторина",
+      "description": "Спробуйте не програти з Знання для всіх!",
+      "thumbnails": {
+        "medium": { "url": "https://img.youtube.com/vi/ВАШ_VIDEO_ID_НЕ_ПРОГРАЄШ/mqdefault.jpg" }
+      }
     }
   }
 ]
