@@ -1,0 +1,16 @@
+[
+  {
+    "snippet": {
+      "resourceId": { "videoId": "dQw4w9WgXcQ" },
+      "title": "Приклад відео: Географія",
+      "description": "Тестове відео для категорії Географія."
+    }
+  },
+  {
+    "snippet": {
+      "resourceId": { "videoId": "kJQP7kiw5Fk" },
+      "title": "Приклад відео: Історія",
+      "description": "Тестове відео для категорії Історія."
+    }
+  }
+]
