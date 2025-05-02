@@ -2,6 +2,8 @@
 const API_KEYS = [
   'AIzaSyBIsnxOgHVW7AbYsYLZ6yMUF8f3PZFQFqc',
   'AIzaSyBUIKh8TbT05XmLQTsQq9aXwf0RsiB-GR0',
+  'AIzaSyDCcBegHCWOYPeOYZ18S6yL_98NkA0Xneo',
+  'AIzaSyCMkqckTDk8jps-42J3bWqUswr3VGenYIo',
 ];
 let currentKeyIndex = 0;
 
