@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Сім чудес стародавнього світу",
+        "url": "facts/articles/seven-wonders/",
+        "thumbnail": "facts/articles/seven-wonders/cover.jpg",
+        "description": "Дізнайтесь про легендарні пам’ятки, які вражали людство тисячоліттями: від пірамід Гізи до Александрійського маяка."
+    },
+    {
+        "title": "Топ 10 фактів про Ватикан і Пап",
+        "url": "facts/articles/vatican-popes/",
+        "thumbnail": "facts/articles/vatican-popes/cover.jpg",
+        "description": "Таємниці Ватикану: як обирають Пап Римських, скандали, інтриги та найцікавіші факти про найменшу державу світу!"
+    },
+    {
+        "title": "Топ 15 слів, які прикрасять вашу мову",
+        "url": "facts/articles/rare-ukrainian-words/",
+        "thumbnail": "facts/articles/rare-ukrainian-words/cover.jpg",
+        "description": "Дізнайтесь про маловживані українські слова, які збагатять вашу мову: від 'легіт' до 'смерека'."
+    },
+    {
+        "title": "10 перлин Українських Карпат: від Говерли до червоної рути",
+        "url": "facts/articles/carpathian-pearls/",
+        "thumbnail": "facts/articles/carpathian-pearls/cover.jpg",
+        "description": "Відкрийте красу Карпат: Говерла, Синевир, червона рута та інші скарби! 10 цікавих фактів про Українські Карпати."
+    },
+    {
+        "title": "Жінки Біблії: Кров, Спокуса, Героїзм",
+        "url": "facts/articles/women-of-bible/",
+        "thumbnail": "facts/articles/women-of-bible/cover.jpg",
+        "description": "Від Саломеї, що танцювала за голову пророка, до Естер, що врятувала народ — дізнайтесь про жінок Біблії, чиї історії сповнені пристрасті, зрад і сміливості!"
+    },
+    {
+        "title": "Океани Землі: Таємниці Глибин і Загрози Майбутнього",
+        "url": "facts/articles/oceans-of-earth/",
+        "thumbnail": "facts/articles/oceans-of-earth/cover.jpg",
+        "description": "Від Маріанської западини до Великого Бар’єрного рифу — відкрийте 5 океанів та їхні загадки!"
+    },
+    {
+        "title": "ТОП-10 Фактів про Давній Єгипет: Таємниці Фараонів, Що Шокують Світ",
+        "url": "facts/articles/ancient-egypt/",
+        "thumbnail": "facts/articles/ancient-egypt/cover.jpg",
+        "description": "Від пірамід, що будувалися без техніки, до мумій із прокльонами — відкрийте 10 шокуючих фактів про Давній Єгипет, які розкривають таємниці фараонів!"
+    },
+    {
+        "title": "Винаходи, що змінили світ: Від колеса до смартфона",
+        "url": "facts/articles/great-inventions/",
+        "thumbnail": "facts/articles/great-inventions/cover.jpg",
+        "description": "Від колеса до смартфона — дізнайтесь про винаходи, які сформували історію людства!"
+    },
+    {
+        "title": "20 неймовірних фактів про котів, які змусять вас їх полюбити ще більше",
+        "url": "facts/articles/amazing-cat-facts/",
+        "thumbnail": "facts/articles/amazing-cat-facts/cover.jpg",
+        "description": "Відкрийте 20 дивовижних фактів про котів: від космічних пригод до унікальних рис. Перевірте знання у нашій вікторині!"
+    }
+]
