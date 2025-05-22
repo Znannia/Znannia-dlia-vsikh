@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7670201293870640"
-     crossorigin="anonymous"></script>
-  <meta name="google-adsense-account" content="ca-pub-7670201293870640">
+  <!-- Код ініціалізації AdSense для Auto Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7670201293870640" crossorigin="anonymous"></script>
+  <meta name="google-site-verification" content="AS3pTU11DsjRwuy5LKmc0_WO1nd-QmU0lj0pQHFiiEk">
+  <meta name="robots" content="index, follow">
   <meta name="description" content="Зануртеся у світ Святого Письма з вікторинами про Біблію! Перевірте, як добре ви знаєте біблійні сюжети та персонажів разом із сім’єю. Спробуйте зараз!">
   <meta name="keywords" content="біблія, вікторини, знання для всіх, освіта, Україна, НМТ 2025">
-  <meta name="robots" content="index, follow">
   <meta name="author" content="Знання для всіх">
   <meta property="og:title" content="Біблія - Знання для всіх">
   <meta property="og:description" content="Зануртеся у світ Святого Письма з вікторинами про Біблію! Перевірте знання біблійних сюжетів.">
@@ -27,7 +27,9 @@
   <link rel="alternate" hreflang="x-default" href="https://www.znannia.online/bible.html">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7670201293870640" crossorigin="anonymous"></script>
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="logo.png" as="image">
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYFG3B62FV"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -35,20 +37,35 @@
     gtag('js', new Date());
     gtag('config', 'G-SYFG3B62FV');
   </script>
+  <!-- Схема JSON-LD для SEO -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Біблія - Знання для всіх",
+    "description": "Зануртеся у світ Святого Письма з вікторинами про Біблію! Перевірте, як добре ви знаєте біблійні сюжети та персонажів разом із сім’єю.",
+    "url": "https://www.znannia.online/bible.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Знання для всіх",
+      "logo": { "@type": "ImageObject", "url": "https://www.znannia.online/logo.png" }
+    },
+    "breadcrumb": {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Головна", "item": "https://www.znannia.online/"},
-        {"@type": "ListItem", "position": 2, "name": "Біблія", "item": "https://www.znannia.online/bible.html"}
+        { "@type": "ListItem", "position": 1, "name": "Головна", "item": "https://www.znannia.online/" },
+        { "@type": "ListItem", "position": 2, "name": "Біблія", "item": "https://www.znannia.online/bible.html" }
       ]
     }
+  }
   </script>
   <title>Біблія - Знання для всіх</title>
 </head>
 <body>
-  <header>
+  <noscript>
+    <p>Для перегляду вмісту увімкніть JavaScript або відвідайте наш <a href="https://www.youtube.com/@ЗнанняДляВсіхТак">YouTube-канал</a>.</p>
+  </noscript>
+  <header role="banner">
     <div class="logo">
       <a href="index.html"><img src="logo.png" alt="Логотип Знання для всіх" loading="lazy"></a>
       <div class="youtube-icon">
@@ -84,7 +101,7 @@
     <p id="category-description">Зануртеся у світ Святого Письма з вікторинами про Біблію! Перевірте, як добре ви знаєте біблійні сюжети та персонажів разом із сім’єю. Пройдіть тест і поглибте свої знання!</p>
     <div id="category-videos" data-category="Біблія" data-playlist-id="PLOI77RmcxMp6bsY12dqBZ9tdf-EMf6lpY"></div>
   </div>
-  <footer>
+  <footer role="contentinfo">
     <div class="footer-left">
       <div class="footer-youtube-icon">
         <a href="https://www.youtube.com/@ЗнанняДляВсіхТак" target="_blank">
@@ -104,6 +121,7 @@
         <li><a href="logic.html">Логіка</a></li>
         <li><a href="what-is-extra.html">Що зайве</a></li>
         <li><a href="never-lose.html">Не програєш</a></li>
+        <li><a href="facts.html">Цікаві факти</a></li>
       </ul>
       <div class="footer-links">
         <a href="about.html">Про нас</a>
