@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://www.znannia.online; frame-src https://www.youtube.com https://www.youtube-nocookie.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://www.znannia.online; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://www.znannia.online;">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7670201293870640" crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="AS3pTU11DsjRwuy5LKmc0_WO1nd-QmU0lj0pQHFiiEk">
     <meta name="robots" content="index, follow">
@@ -156,17 +156,7 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
                 <h3>Читайте також</h3>
-                <ul>
-                    {{if RELATED_ARTICLE_1}}
-                    <li><a href="/facts/articles/{{RELATED_ARTICLE_1}}">{{RELATED_TITLE_1}}</a></li>
-                    {{/if}}
-                    {{if RELATED_ARTICLE_2}}
-                    <li><a href="/facts/articles/{{RELATED_ARTICLE_2}}">{{RELATED_TITLE_2}}</a></li>
-                    {{/if}}
-                    {{if RELATED_ARTICLE_3}}
-                    <li><a href="/facts/articles/{{RELATED_ARTICLE_3}}">{{RELATED_TITLE_3}}</a></li>
-                    {{/if}}
-                </ul>
+                <ul id="related-articles"></ul>
             </div>
         </div>
         <div class="share-nav">
