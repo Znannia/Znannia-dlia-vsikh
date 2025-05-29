@@ -7,7 +7,48 @@
     background-color: #0a2f2f;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative; /* ЗМІНА: Для коректного позиціонування відносно баннерів */
 }
+
+/* ЗМІНА: Стилі для вертикальних рекламних баннерів */
+.ad-banner-left,
+.ad-banner-right {
+    position: sticky;
+    top: 100px; /* Відступ від верху при прокручуванні */
+    width: 300px; /* Стандартний розмір для AdSense 300x600 */
+    height: 600px;
+    background-color: #1a3c34; /* Запасний фон для видимості */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Запобігає розтягуванню */
+}
+
+.ad-banner-left {
+    left: calc((100% - 900px) / 2 - 320px); /* Зміщення ліворуч від .facts-content */
+    position: absolute; /* Для широких екранів */
+}
+
+.ad-banner-right {
+    right: calc((100% - 900px) / 2 - 320px); /* Зміщення праворуч від .facts-content */
+    position: absolute; /* Для широких екранів */
+}
+
+.ad-banner-left ins,
+.ad-banner-right ins {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    overflow: hidden !important;
+}
+
+/* ЗМІНА: Стилі для горизонтальної реклами, щоб уникнути зсувів */
+.adsbygoogle {
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+/* Кінець ЗМІНИ */
 
 .intro-section {
     position: relative;
@@ -20,14 +61,14 @@
 
 .title-wrapper {
     position: relative;
-    margin-bottom: 30px; /* Збільшено для відступу риски */
+    margin-bottom: 30px;
     text-align: center;
 }
 
 .facts-content h1 {
-    color: #FFF5E1; /* Молочний колір */
+    color: #FFF5E1;
     font-size: 32px;
-    margin-bottom: 15px; /* Додано відступ під заголовком */
+    margin-bottom: 15px;
     text-align: center;
     text-transform: uppercase;
     position: relative;
@@ -35,7 +76,7 @@
 }
 
 .facts-content h2 {
-    color: #FFF5E1; /* Молочний колір */
+    color: #FFF5E1;
     font-size: 28px;
     margin-bottom: 10px;
     text-align: center;
@@ -44,7 +85,7 @@
 .title-wrapper::after {
     content: '';
     position: absolute;
-    bottom: -10px; /* Опускаємо риску нижче */
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
     width: 60%;
@@ -58,10 +99,10 @@
     font-size: 18px;
     line-height: 1.7;
     color: #ffffff;
-    text-align: left; /* Вирівнювання за лівим краєм */
+    text-align: left;
     padding: 0 10px;
-    white-space: normal; /* Нормалізація пробілів */
-    overflow-wrap: break-word; /* Перенос довгих слів */
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 .article-section {
@@ -79,7 +120,7 @@
 }
 
 .article-section p {
-    margin-bottom: 8px; /* Компактні відступи */
+    margin-bottom: 8px;
 }
 
 .article-section a {
@@ -100,17 +141,34 @@
     margin-bottom: 5px;
 }
 
+/* ЗМІНА: Стилі для динамічної секції "Читайте також" */
+#related-articles li a {
+    color: #ffcc00;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#related-articles li a:hover {
+    background-color: rgba(255, 215, 0, 0.15);
+    color: #e6b800;
+}
+/* Кінець ЗМІНИ */
+
 .read-more {
     display: inline-block;
-    padding: 6px 10px; /* Менший розмір для ненав’язливості */
+    padding: 6px 10px;
     background-color: rgba(255, 215, 0, 0.15);
     border-radius: 5px;
     color: #ffcc00;
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px; /* Менший шрифт для гармонії */
+    font-size: 16px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin: 10px 0; /* Відступи для відокремлення від тексту */
+    margin: 10px 0;
 }
 
 .read-more:hover {
@@ -134,13 +192,13 @@
 
 .related-link p {
     margin: 0;
-    font-size: 16px; /* Узгоджено з .read-more */
-    color: #ffffff; /* Білий текст для гармонії */
+    font-size: 16px;
+    color: #ffffff;
 }
 
 .related-link .read-more::before {
-    content: "Читати ще: "; /* Додаємо "Читати ще:" перед гіперпосиланням */
-    color: #ffcc00; /* Жовтий колір, як у посилання */
+    content: "Читати ще: ";
+    color: #ffcc00;
     font-weight: 500;
 }
 
@@ -274,73 +332,92 @@
     margin-bottom: 0;
 }
 
-@media (max-width: 600px) {
+/* ЗМІНА: Адаптивність для вертикальних баннерів і захисту мобільної версії */
+@media (min-width: 1200px) {
+    .ad-banner-left,
+    .ad-banner-right {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .ad-banner-left,
+    .ad-banner-right {
+        width: 160px; /* Менший розмір для планшетів */
+        height: 600px;
+    }
+    .ad-banner-left {
+        left: calc((100% - 900px) / 2 - 180px);
+    }
+    .ad-banner-right {
+        right: calc((100% - 900px) / 2 - 180px);
+    }
+}
+
+@media (max-width: 767px) {
+    .ad-banner-left,
+    .ad-banner-right {
+        display: none; /* Приховуємо вертикальні баннери на мобільних */
+    }
+    .adsbygoogle {
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 1rem auto;
+        overflow: hidden;
+    }
     .facts-content {
         padding: 15px;
     }
-
     .intro-section {
         padding: 15px;
     }
-
     .facts-content h1 {
         font-size: 26px;
     }
-
     .facts-content h2 {
         font-size: 24px;
     }
-
     .article-text {
         font-size: 16px;
     }
-
     .article-section h3 {
         font-size: 22px;
     }
-
     .related-link h3 {
         font-size: 20px;
     }
-
     .article-video {
         max-width: 100%;
     }
-
     .share-nav {
         flex-direction: column;
         gap: 10px;
     }
-
     .nav-btn {
         width: 100%;
         text-align: center;
     }
-
     .share-container {
         flex-direction: row;
         width: 100%;
         padding: 8px;
         justify-content: center;
     }
-
     .share-btn {
         width: auto;
         text-align: center;
     }
-
     .share-icons-left,
     .share-icons-right {
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
     }
-
     .title-wrapper::after {
         width: 80%;
     }
-
     .category-buttons {
         display: none;
     }
 }
+/* Кінець ЗМІНИ */
