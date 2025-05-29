@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://www.znannia.online; frame-src https://www.youtube.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://www.znannia.online; frame-src https://www.youtube.com https://www.youtube-nocookie.com;">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7670201293870640" crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="AS3pTU11DsjRwuy5LKmc0_WO1nd-QmU0lj0pQHFiiEk">
     <meta name="robots" content="index, follow">
@@ -21,9 +21,9 @@
     <meta name="twitter:image" content="{{COVER_IMAGE}}">
     <meta name="twitter:site" content="@ZnanniaOnline">
     <link rel="canonical" href="https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/facts/styles/facts.css">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../styles/facts.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYFG3B62FV"></script>
@@ -40,9 +40,13 @@
         "headline": "{{TITLE}}",
         "description": "{{DESCRIPTION}}",
         "image": "{{COVER_IMAGE}}",
+        "keywords": "{{KEYWORDS}}",
+        "articleSection": "{{CATEGORY}}",
+        "wordCount": "{{WORD_COUNT}}",
         "author": {
-            "@type": "Person",
-            "name": "{{AUTHOR_NAME}}"
+            "@type": "Organization",
+            "name": "Знання для всіх",
+            "url": "https://www.znannia.online/"
         },
         "publisher": {
             "@type": "Organization",
@@ -50,6 +54,10 @@
             "logo": { "@type": "ImageObject", "url": "https://www.znannia.online/logo.png" }
         },
         "url": "https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/"
+        },
         "datePublished": "{{DATE}}",
         "dateModified": "{{DATE_MODIFIED}}"
     }
@@ -58,16 +66,16 @@
 <body>
     <header role="banner">
         <div class="logo">
-            <a href="/"><img src="/logo.png" alt="Логотип Знання для всіх" loading="lazy"></a>
+            <a href="../../../index.html"><img src="../../../logo.png" alt="Логотип Знання для всіх" loading="lazy"></a>
             <div class="youtube-icon">
-                <a href="https://www.youtube.com/@ЗнанняДляВсіхТак" target="_blank"><img src="/youtube-icon.png" alt="YouTube канал Знання для всіх" loading="lazy"></a>
+                <a href="https://www.youtube.com/@ЗнанняДляВсіхТак" target="_blank"><img src="../../../youtube-icon.png" alt="YouTube канал Знання для всіх" loading="lazy"></a>
             </div>
         </div>
         <div class="header-center">
-            <p class="welcome-text">Вітаємо на каналі</p>
-            <div class="site-title"><a href="/">Знання для всіх</a></div>
-            <p class="subtitle">Тести й вікторини для всієї родини</p>
-            <p class="slogan">Перевірте свої знання</p>
+            <p class="welcome-text">ВІТАЄМО НА КАНАЛІ</p>
+            <h1><a href="../../../index.html">ЗНАННЯ ДЛЯ ВСІХ</a></h1>
+            <p class="subtitle">Тести й вікторини — для всієї родини!</p>
+            <p class="slogan">Перевірте свої знання!</p>
         </div>
         <div class="header-right">
             <div id="subscribers" class="subscribers"></div>
@@ -76,50 +84,41 @@
     </header>
     <div class="divider"></div>
     <div class="category-buttons">
-        <a href="/geography.html" class="category-btn">Географія</a>
-        <a href="/history.html" class="category-btn">Історія</a>
-        <a href="/bible.html" class="category-btn">Біблія</a>
-        <a href="/ukraine.html" class="category-btn">Україна</a>
-        <a href="/general-knowledge.html" class="category-btn">Загальні знання</a>
-        <a href="/logic.html" class="category-btn">Логіка</a>
-        <a href="/what-is-extra.html" class="category-btn">Що зайве</a>
-        <a href="/never-lose.html" class="category-btn">Не програєш</a>
+        <a href="../../../geography.html" class="category-btn">Географія</a>
+        <a href="../../../history.html" class="category-btn">Історія</a>
+        <a href="../../../bible.html" class="category-btn">Біблія</a>
+        <a href="../../../ukraine.html" class="category-btn">Україна</a>
+        <a href="../../../general-knowledge.html" class="category-btn">Загальні знання</a>
+        <a href="../../../logic.html" class="category-btn">Логіка</a>
+        <a href="../../../what-is-extra.html" class="category-btn">Що зайве</a>
+        <a href="../../../never-lose.html" class="category-btn">Не програєш</a>
     </div>
     <div class="facts-content">
-        <div class="intro-section">
-            <div class="title-wrapper">
-                <h1>{{TITLE}}</h1>
-            </div>
-            <div class="article-text">
-                {{LEAD_PARAGRAPH}}
-            </div>
+        <h2>{{TITLE}}</h2>
+        <div class="article-text">
+            {{LEAD_PARAGRAPH}}
         </div>
         <div class="share-nav">
-            <a href="/" class="nav-btn">На головну</a>
+            <a href="../../../index.html" class="nav-btn">На головну</a>
             <div class="share-container">
                 <div class="share-icons-left">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/" target="_blank" class="share-icon facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://t.me/share/url?url=https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/&text={{TITLE}}" target="_blank" class="share-icon telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/" target="_blank" class="share-icon facebook" aria-label="Поділитися у Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://t.me/share/url?url=https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/&text={{TITLE}}" target="_blank" class="share-icon telegram" aria-label="Поділитися у Telegram"><i class="fab fa-telegram-plane"></i></a>
                 </div>
-                <button class="share-btn">Поділитися</button>
+                <button class="share-btn" aria-label="Поділитися">Поділитися</button>
                 <div class="share-icons-right">
-                    <a href="viber://forward?text={{TITLE}}%20https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/" target="_blank" class="share-icon viber"><i class="fab fa-viber"></i></a>
-                    <a href="https://api.whatsapp.com/send?text={{TITLE}}%20https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/" target="_blank" class="share-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="viber://forward?text={{TITLE}}%20https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/" target="_blank" class="share-icon viber" aria-label="Поділитися у Viber"><i class="fab fa-viber"></i></a>
+                    <a href="https://api.whatsapp.com/send?text={{TITLE}}%20https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/" target="_blank" class="share-icon whatsapp" aria-label="Поділитися у WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
-            <a href="/facts.html" class="nav-btn">До інших цікавинок</a>
+            <a href="../../../facts.html" class="nav-btn">До інших цікавинок</a>
         </div>
         <div class="article-text">
-            <picture>
-                <source srcset="{{COVER_IMAGE_WEBP}}" type="image/webp">
-                <img src="{{COVER_IMAGE}}" srcset="{{COVER_IMAGE_400}} 400w, {{COVER_IMAGE_800}} 800w" sizes="(max-width: 600px) 400px, 800px" alt="{{TITLE}}" class="article-image" loading="lazy">
-            </picture>
             <ins class="adsbygoogle" style="display:block; margin: 1rem auto;" data-ad-client="ca-pub-7670201293870640" data-ad-slot="1234567890" data-ad-format="auto"></ins>
             <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
             {{REMAINING_CONTENT}}
-            <!-- Блоки з гіперпосиланнями в тексті -->
             {{if RELATED_ARTICLE_1}}
             <div class="related-link">
                 <h3>Читайте:</h3>
@@ -140,19 +139,23 @@
             {{/if}}
             {{if VIDEO_ID}}
             <div class="article-section">
-                <h2>Перевірте свої знання у нашій вікторині</h2>
+                <h3>Перевірте свої знання у нашій вікторині</h3>
                 <p>Поглибте знання за допомогою вікторини на YouTube-каналі <a href="https://www.youtube.com/@ЗнанняДляВсіхТак" target="_blank">Знання для всіх</a>.</p>
                 <div class="article-video">
                     <iframe src="https://www.youtube.com/embed/{{VIDEO_ID}}" frameborder="0" allowfullscreen loading="lazy"></iframe>
                 </div>
             </div>
             <div class="article-section">
-                <h2>Яка історія вас вразила?</h2>
+                <h3>Яка історія вас вразила?</h3>
                 <p>Поділіться думками в коментарях до відео на <a href="https://www.youtube.com/@ЗнанняДляВсіхТак" target="_blank">YouTube</a>. <a href="https://www.youtube.com/@ЗнанняДляВсіхТак?sub_confirmation=1" target="_blank">Підпишіться</a>, щоб не пропустити нові вікторини.</p>
             </div>
             {{/if}}
             <div class="article-section">
-                <h2>Читайте також</h2>
+                <ins class="adsbygoogle" style="display:block; margin: 1rem auto;" data-ad-client="ca-pub-7670201293870640" data-ad-slot="9876543210" data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <h3>Читайте також</h3>
                 <ul>
                     {{if RELATED_ARTICLE_1}}
                     <li><a href="/facts/articles/{{RELATED_ARTICLE_1}}">{{RELATED_TITLE_1}}</a></li>
@@ -167,54 +170,54 @@
             </div>
         </div>
         <div class="share-nav">
-            <a href="/" class="nav-btn">На головну</a>
+            <a href="../../../index.html" class="nav-btn">На головну</a>
             <div class="share-container">
                 <div class="share-icons-left">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/" target="_blank" class="share-icon facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://t.me/share/url?url=https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/&text={{TITLE}}" target="_blank" class="share-icon telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/" target="_blank" class="share-icon facebook" aria-label="Поділитися у Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://t.me/share/url?url=https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/&text={{TITLE}}" target="_blank" class="share-icon telegram" aria-label="Поділитися у Telegram"><i class="fab fa-telegram-plane"></i></a>
                 </div>
-                <button class="share-btn">Поділитися</button>
+                <button class="share-btn" aria-label="Поділитися">Поділитися</button>
                 <div class="share-icons-right">
-                    <a href="viber://forward?text={{TITLE}}%20https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/" target="_blank" class="share-icon viber"><i class="fab fa-viber"></i></a>
-                    <a href="https://api.whatsapp.com/send?text={{TITLE}}%20https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/" target="_blank" class="share-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="viber://forward?text={{TITLE}}%20https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/" target="_blank" class="share-icon viber" aria-label="Поділитися у Viber"><i class="fab fa-viber"></i></a>
+                    <a href="https://api.whatsapp.com/send?text={{TITLE}}%20https://www.znannia.online/facts/articles/{{ARTICLE_SLUG}}/" target="_blank" class="share-icon whatsapp" aria-label="Поділитися у WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
-            <a href="/facts.html" class="nav-btn">До інших цікавинок</a>
+            <a href="../../../facts.html" class="nav-btn">До інших цікавинок</a>
         </div>
     </div>
     <footer role="contentinfo">
         <div class="footer-left">
             <div class="footer-youtube-icon">
-                <a href="https://www.youtube.com/@ЗнанняДляВсіхТак" target="_blank"><img src="/youtube-icon.png" alt="YouTube канал Знання для всіх" loading="lazy"></a>
+                <a href="https://www.youtube.com/@ЗнанняДляВсіхТак" target="_blank"><img src="../../../youtube-icon.png" alt="YouTube канал Знання для всіх" loading="lazy"></a>
             </div>
             <p><a href="mailto:znanniadliavsikh@gmail.com">znanniadliavsikh@gmail.com</a></p>
         </div>
         <div class="footer-center">
             <button id="categories-btn" aria-expanded="false" aria-controls="categories-list">Категорії</button>
             <ul id="categories-list">
-                <li><a href="/geography.html">Географія</a></li>
-                <li><a href="/history.html">Історія</a></li>
-                <li><a href="/bible.html">Біблія</a></li>
-                <li><a href="/ukraine.html">Україна</a></li>
-                <li><a href="/general-knowledge.html">Загальні знання</a></li>
-                <li><a href="/logic.html">Логіка</a></li>
-                <li><a href="/what-is-extra.html">Що зайве</a></li>
-                <li><a href="/never-lose.html">Не програєш</a></li>
-                <li><a href="/facts.html">Цікаві факти</a></li>
+                <li><a href="../../../geography.html">Географія</a></li>
+                <li><a href="../../../history.html">Історія</a></li>
+                <li><a href="../../../bible.html">Біблія</a></li>
+                <li><a href="../../../ukraine.html">Україна</a></li>
+                <li><a href="../../../general-knowledge.html">Загальні знання</a></li>
+                <li><a href="../../../logic.html">Логіка</a></li>
+                <li><a href="../../../what-is-extra.html">Що зайве</a></li>
+                <li><a href="../../../never-lose.html">Не програєш</a></li>
+                <li><a href="../../../facts.html">Цікаві факти</a></li>
             </ul>
             <div class="footer-links">
-                <a href="/about.html">Про нас</a>
-                <a href="/contact.html">Контакти</a>
-                <a href="/collaboration.html">Співпраця</a>
-                <a href="/privacy.html">Політика конфіденційності</a>
+                <a href="../../../about.html">Про нас</a>
+                <a href="../../../contact.html">Контакти</a>
+                <a href="../../../collaboration.html">Співпраця</a>
+                <a href="../../../privacy.html">Політика конфіденційності</a>
             </div>
         </div>
         <div class="footer-right">
-            <a href="/"><img src="/logo.png" alt="Логотип Знання для всіх" class="footer-logo" loading="lazy"></a>
+            <a href="../../../index.html"><img src="../../../logo.png" alt="Логотип Знання для всіх" class="footer-logo" loading="lazy"></a>
             <p>© 2025 Знання для всіх</p>
         </div>
     </footer>
-    <script defer src="/script.js"></script>
-    <script defer src="/facts/scripts/facts.js"></script>
+    <script defer src="../../../script.js"></script>
+    <script defer src="../../scripts/facts.js"></script>
 </body>
 </html>
