@@ -1,10 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Глобальні стилі (залишаємо без змін для десктопа) */
+/* Глобальні стилі */
 * {
   box-sizing: border-box;
 }
 
+/* Кнопки категорій (десктоп) */
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 0 15px;
+}
+
+.category-btn {
+  background-color: #1a3c34;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #ffcc00;
+  color: #000000;
+}
+
+.category-btn.active {
+  background-color: #ffcc00;
+  color: #000000;
+  font-weight: 700;
+}
+
+/* Основний контент (десктоп) */
 .facts-content {
   max-width: 900px;
   margin: 20px auto;
@@ -79,7 +113,7 @@
   display: block;
 }
 
-/* Стилі для контенту (залишаємо без змін для десктопа) */
+/* Стилі для контенту */
 .intro-section {
   position: relative;
   padding: 20px;
@@ -360,7 +394,7 @@
   margin-bottom: 0;
 }
 
-/* Адаптивність для десктопа і планшетів (залишаємо без змін) */
+/* Адаптивність для десктопа і планшетів */
 @media (min-width: 1200px) {
   .ad-banner-left,
   .ad-banner-right {
@@ -382,7 +416,7 @@
   }
 }
 
-/* Зміни лише для мобільної версії */
+/* Мобільна версія */
 @media (max-width: 767px) {
   html, body {
     margin: 0;
@@ -390,11 +424,14 @@
     width: 100%;
     overflow-x: hidden;
   }
+  .category-buttons {
+    display: none;
+  }
   .content-wrapper {
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    display: block; /* Вимикаємо flex для мобільної версії */
+    display: block;
   }
   .facts {
     margin: 0;
