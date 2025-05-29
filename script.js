@@ -384,7 +384,7 @@ async function fetchCategoryVideos() {
         const endIndex = startIndex + VIDEOS_PER_PAGE;
         const nextVideos = i.slice(startIndex, endIndex);
         renderVideos(nextVideos, e);
-        if (endIndex >= i.length) loadMoreBtn.remove();
+        if (endIndex >= videos.length) loadMoreBtn.remove();
       };
       e.after(loadMoreBtn);
     }
