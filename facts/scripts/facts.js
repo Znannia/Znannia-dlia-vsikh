@@ -1,16 +1,16 @@
 // facts.js
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('facts.js завантажено'); // Дебаг
+  console.log('facts.js завантажено');
   const factsList = document.getElementById('facts-list');
   if (factsList) {
-    console.log('facts-list знайдено, завантажую статті'); // Дебаг
-    fetch('facts/articles/articles.json') // Уточнений шлях
+    console.log('facts-list знайдено');
+    fetch('/facts/articles/articles.json') // Абсолютний шлях
       .then(response => {
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         return response.json();
       })
       .then(articles => {
-        console.log('Статті:', articles); // Дебаг
+        console.log('Статті:', articles);
         factsList.innerHTML = '';
         const articlesToDisplay = window.location.pathname.includes('facts.html') ? articles : articles.slice(0, 6);
         if (articlesToDisplay.length === 0) {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         factsList.innerHTML = '<p>Не вдалося завантажити статті. Спробуйте пізніше.</p>';
       });
   } else {
-    console.log('facts-list не знайдено'); // Дебаг
+    console.log('facts-list не знайдено');
   }
 
   // Логіка для "Читайте також"
