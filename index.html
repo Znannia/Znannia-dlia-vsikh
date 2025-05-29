@@ -3,33 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Код ініціалізації AdSense для Auto Ads -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7670201293870640" crossorigin="anonymous"></script>
   <meta name="google-site-verification" content="AS3pTU11DsjRwuy5LKmc0_WO1nd-QmU0lj0pQHFiiEk">
   <meta name="robots" content="index, follow">
-  <title>Знання для всіх: Вікторини з Географії, Історії, Біблії</title>
-  <meta name="description" content="Унікальні тести та вікторини з географії, історії, Біблії, України та логіки для родини та друзів. Пізнавайте світ через розваги з YouTube-каналом Знання для всіх!">
-  <meta name="keywords" content="вікторини, тести, географія, історія, Біблія, Україна, логіка, знання для всіх, YouTube, освіта, розваги для родини, цікаві факти">
+  <title>Знання для всіх: Вікторини з Географії, Істориї, Библиї</title>
+  <meta name="description" content="Унікальні тести та вікторини з географії, історії, Библиї, України та логіки для родини та друзів. Пізнавайте світ через розваги з YouTube-каналом Знання для всіх!">
   <meta property="og:title" content="Знання для всіх - Тести й Вікторини для всієї родини">
-  <meta property="og:description" content="Унікальні тести та вікторини з географії, історії, Біблії, України та логіки для родини та друзів. Пізнавайте світ через розваги з YouTube-каналом Знання для всіх!">
+  <meta property="og:description" content="Унікальні тести та вікторини з географії, історії, Библиї, України та логіки для родини та друзів. Пізнавайте світ через розваги з YouTube-каналом Знання для всіх!">
   <meta property="og:url" content="https://www.znannia.online/">
   <meta property="og:image" content="https://www.znannia.online/logo.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Знання для всіх - Тести й Вікторини для всієї родини">
-  <meta name="twitter:description" content="Унікальні тести та вікторини з географії, історії, Біблії, України та логіки для родини та друзів. Пізнавайте світ через розваги з YouTube-каналом Знання для всіх!">
+  <meta name="twitter:description" content="Унікальні тести та вікторини з географії, історії, Библиї, України та логіки для родини та друзів. Пізнавайте світ через розваги з YouTube-каналом Знання для всіх!">
   <meta name="twitter:image" content="https://www.znannia.online/logo.png">
   <link rel="canonical" href="https://www.znannia.online/">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="facts.css"> <!-- Додано -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="alternate" hreflang="uk" href="https://www.znannia.online/">
   <link rel="alternate" hreflang="x-default" href="https://www.znannia.online/">
   <link rel="preload" href="style.css" as="style">
   <link rel="preload" href="logo.png" as="image">
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYFG3B62FV"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -37,13 +35,12 @@
     gtag('js', new Date());
     gtag('config', 'G-SYFG3B62FV');
   </script>
-  <!-- Схема JSON-LD для SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Знання для всіх: Вікторини та Тести",
-    "description": "Унікальні тести та вікторини з географії, історії, Біблії, України, логіки для родини та друзів. Пізнавайте світ через розваги разом із Знання для всіх!",
+    "description": "Унікальні тести та вікторини з географії, історії, Библиї, України, логіки для родини та друзів. Пізнавайте світ через розваги разом із Знання для всіх!",
     "url": "https://www.znannia.online/",
     "publisher": {
       "@type": "Organization",
@@ -92,13 +89,13 @@
   </div>
   <div class="latest-videos">
     <h3>Останні відео</h3>
-    <p>Перегляньте найновіші вікторини з географії, історії, Біблії, України та логіки, щоб весело провести час із родиною!</p>
+    <p>Перегляньте найновіші вікторини з географії, історії, Библиї, України та логіки, щоб весело провести час із родиною!</p>
     <div id="latest-videos"></div>
   </div>
   <div class="facts-section">
     <h3><a href="facts.html">Цікаві факти</a></h3>
     <p>Дізнайтесь захопливі факти про світ, історію, культуру та науку через наші статті!</p>
-    <div id="facts-list"></div>
+    <div id="facts-list" class="facts-grid"></div> <!-- Додано клас -->
   </div>
   <div class="random-videos">
     <h3>Випадкові відео</h3>
@@ -107,7 +104,7 @@
   </div>
   <div class="intro-text">
     <h2>Знання для всіх — пізнавайте світ із радістю!</h2>
-    <p>Ласкаво просимо до унікального освітнього порталу "Знання для всіх"! Наші захопливі вікторини та тести з географії, історії, Біблії, України, логіки та інших тем створені, щоб об’єднувати родини та друзів у веселому пізнанні світу. Ми пропонуємо розважальний контент, який допомагає дізнаватися нове, розвивати ерудицію та проводити час із користю.</p>
+    <p>Ласкаво просимо до унікального освітнього порталу "Знання для всіх"! Наші захопливі вікторини та тести з географії, історії, Библиї, України, логіки та інших тем створені, щоб об’єднувати родини та друзів у веселому пізнанні світу. Ми пропонуємо розважальний контент, який допомагає дізнаватися нове, розвивати ерудицію та проводити час із користю.</p>
     <p class="extended-text">Усі відео та статті створені нашою командою контент-креаторів, які прагнуть зробити навчання цікавим і доступним. Обирайте улюблену категорію чи статтю, занурюйтесь у світ знань і насолоджуйтесь розвагами разом із близькими! Приєднуйтесь до тисяч користувачів, які відкривають радість навчання з нами. Дізнайтесь більше про культуру, історію, науку та Україну через наші унікальні тести та статті в розділі <a href="facts.html" style="color: #ffcc00;">Цікаві факти</a>.</p>
   </div>
   <footer role="contentinfo">
@@ -142,6 +139,7 @@
       <p>© <script>document.write(new Date().getFullYear())</script> Знання для всіх</p>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="facts/scripts/facts.js"></script> <!-- Додано -->
 </body>
 </html>
